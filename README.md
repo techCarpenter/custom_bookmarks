@@ -1,25 +1,23 @@
 # custom_bookmarks
 
-These images are 16x16 px icons of identical design, with different fill colors. Their primary purpose is to be used with the [bookmark extension](https://marketplace.visualstudio.com/items?itemName=alefragnani.Bookmarks) in VScode to replace the default bookmark icon.
+These images are 16x16 pixel icons of identical design, with different fill colors. Their primary purpose is to be used with the [bookmark extension](https://marketplace.visualstudio.com/items?itemName=alefragnani.Bookmarks) in VScode to replace the default bookmark icon.
 
 These icons are designed to model the bookmark icon found in Visual Studio 2017.
 
-# Customize the bookmark image in VScode
+# Customize the bookmark icon in VScode
 
-1. Install the [bookmarks extension](https://marketplace.visualstudio.com/items?itemName=alefragnani.Bookmarks) to VScode
-2. Update the keybinding for 'Bookmark Toggle' to 'Ctrl+K Ctrl+K' (if you wish to mimic Visual Studio)
-3. Create local folder to put bookmark images into and clone the repo
+1. Install the [bookmarks extension](https://marketplace.visualstudio.com/items?itemName=alefragnani.Bookmarks) for VScode
 
+2. Create local folder to put bookmark images into and clone the repo
     ```bash
     git clone https://github.com/techCarpenter/custom_bookmarks.git
     ```
-
-4. Add setting to the settings.json file:
-   
+    (or you can just download the repo zip file)
+3. Add setting to the settings.json file:
    ```json
-   "bookmark.gutterIconPath": "c:\\bookmark_images\\bookmark_white.png",
+   "bookmark.gutterIconPath": "c:\\path_to_icon\\icon.png"
    ```
-    
+4. **(Optional)** Update the keybinding for 'Bookmark Toggle' to 'Ctrl+K Ctrl+K' (if you wish to mimic Visual Studio)
 5. Enjoy your customized bookmarks!
    ![red bookmark](./bookmark_images/bookmark_red.png)
    ![goldenrod bookmark](./bookmark_images/bookmark_orange.png)
